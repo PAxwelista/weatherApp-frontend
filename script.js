@@ -1,4 +1,5 @@
 const serveurBE = "https://weather-app-backend-gold.vercel.app";
+
 fetch(serveurBE+'/weather')
 	.then(response => response.json())
 	.then(data => {
@@ -38,7 +39,6 @@ function updateDeleteCityEventListener() {
 
 document.querySelector('#addCity').addEventListener('click', function () {
 	const cityName = document.querySelector('#cityNameInput').value;
-
 	fetch(serveurBE+'/weather', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },

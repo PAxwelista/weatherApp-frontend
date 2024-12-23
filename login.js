@@ -1,5 +1,6 @@
-// Insert your code here
+
 const serveurBE = "https://weather-app-backend-gold.vercel.app"
+
 document.querySelector("#register").addEventListener("click" , ()=>{
     fetch(`${serveurBE}/users/signup` , {
             method : "POST" ,
